@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：Element_UI_Tabs
+  File name(文件名): test1
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/5/5
+  Time(创建时间)： 19:15
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/element-ui.css">
+    <script src="js/vue.js"></script>
+    <script src="js/element-ui.js"></script>
+</head>
+<body>
+
+<div id="app">
+
+    <el-tabs @tab-click="handleClick">
+        <el-tab-pane label="选项1" name="1">选项1</el-tab-pane>
+        <el-tab-pane label="选项2" name="2">选项2</el-tab-pane>
+        <el-tab-pane label="选项3" name="3">选项3</el-tab-pane>
+        <el-tab-pane label="选项4" name="4">选项4</el-tab-pane>
+    </el-tabs>
+
+</div>
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {
+            handleClick(tab, event)
+            {
+                console.log(tab, event);
+            }
+        },
+        mounted()
+        {
+
+        }
+    })
+</script>
+
+</body>
+</html>
